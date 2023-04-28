@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "bff21e83-e4a7-4e51-8c96-daec2394c56f",
+		"name": "Movies",
+		"description": "This Collection Contains Api For Movies api..",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20426480"
+	},
+	"item": [
+		{
+			"name": "GetAllMovieList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/moviebooking/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"moviebooking",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateMovie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\": 122,\r\n    \"movieName\": \"Krish3\",\r\n    \"theatre\": [\r\n        {\r\n            \"id\": 1,\r\n            \"theatreName\": \"PVR\",\r\n            \"seat\": 100,\r\n            \"available\": true\r\n            \r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"theatreName\": \"CINEPOLIS\",\r\n            \"seat\": 100,\r\n            \"available\": true\r\n        }\r\n    ],\r\n    \"totalNoOfTicketAlloated\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/moviebooking/admin/addmovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"moviebooking",
+						"admin",
+						"addmovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMovieById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/moviebooking/admin/delete/121",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"moviebooking",
+						"admin",
+						"delete",
+						"121"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchMovieById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/moviebooking/movies/search/122",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"moviebooking",
+						"movies",
+						"search",
+						"122"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMovie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\": 128,\r\n    \"theatre\": \"Cinepolis\",\r\n    \"totalNoOfTicketAlloated\": 100,\r\n    \"ticketId\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/moviebooking/admin/Krish3/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"moviebooking",
+						"admin",
+						"Krish3",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

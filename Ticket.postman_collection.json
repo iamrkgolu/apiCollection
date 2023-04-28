@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "611d8f84-718e-4ef2-961e-efd2fdbdafd7",
+		"name": "Ticket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20426480"
+	},
+	"item": [
+		{
+			"name": "BookTicket",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllTicket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/moviebooking/ticket/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"moviebooking",
+						"ticket",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTicket",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"theaterName\":\"Sakuntal Tokage\",\r\n    \"address\":\"Muzaffarpur\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/moviebooking/Raj 3/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"moviebooking",
+						"Raj 3",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTicket",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetTicketByMovieName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1.0/moviebooking/search/ticket/Raj 1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1.0",
+						"moviebooking",
+						"search",
+						"ticket",
+						"Raj 1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
